@@ -1,4 +1,4 @@
 #!/bin/bash
 rm -r /var/www/html/*
-cd /home/ubuntu/game-hub-clone
-cp -r /home/ubuntu/game-hub-clone/* /var/www/html
+aws s3 cp s3://my-artifact-bucket-1/game-hub-clone-artifact/ /var/www/html --recursive
+
