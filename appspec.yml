@@ -4,6 +4,10 @@ files:
   - source: /
     destination: /home/ubuntu/game-hub-clone
 hooks:
+  BeforeInstall:
+    - location: beforeinstall.sh
+      timeout:300
+      runas:root
   AfterInstall:
     - location: afterinstall.sh
       timeout: 300
